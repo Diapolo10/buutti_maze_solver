@@ -13,7 +13,7 @@ omit = [
 
 
 [tool.poetry]
-name = 'project_name'
+name = 'buutti_maze_solver'
 version = '0.1.0'
 description = "A template Poetry project structure."
 
@@ -24,9 +24,9 @@ include = ['CHANGELOG.md', 'LICENSE',]
 license = 'MIT'
 readme = 'README.md'
 
-homepage = 'https://pypi.org/project/project_name/'
-repository = 'https://github.com/Diapolo10/project_name'
-documentation = 'https://github.com/Diapolo10/project_name/tree/main/docs'
+homepage = 'https://pypi.org/project/buutti_maze_solver/'
+repository = 'https://github.com/Diapolo10/buutti_maze_solver'
+documentation = 'https://github.com/Diapolo10/buutti_maze_solver/tree/main/docs'
 
 keywords = [
     'python3',
@@ -75,8 +75,8 @@ tox-gh-actions = '*'
 
 
 [tool.poetry.urls]
-"Tracker" = 'https://github.com/Diapolo10/project_name/issues'
-"Changelog" = 'https://github.com/Diapolo10/project_name/blob/main/CHANGELOG.md'
+"Tracker" = 'https://github.com/Diapolo10/buutti_maze_solver/issues'
+"Changelog" = 'https://github.com/Diapolo10/buutti_maze_solver/blob/main/CHANGELOG.md'
 
 
 [tool.pytest.ini_options]
