@@ -50,13 +50,16 @@ Lorem Ipsum dolor sit amet.
 <!--
 _______________________________________________________________________________
 
-## [0.1.1] - YYYY-MM-DD
+## [1.0.0] - 2023-06-02
 
-In-progress update goes here.
+This release implements all the requested functionality.
 
 ### Added
 
-- Stuff
+- Critical functionality
+- Documentation (`README.md`)
+- Example screenshot
+- Unit tests
 
 ### Changed
 
@@ -66,7 +69,24 @@ In-progress update goes here.
 
 _______________________________________________________________________________
 
-## [0.1.0] - YYYY-MM-DD
+## [1.0.0] - 2023-06-02
+
+This release implements all the requested functionality.
+
+### Added
+
+- Critical functionality
+- Documentation (`README.md`)
+- Example screenshot
+- Unit tests
+
+### Changed
+
+- Updated localisation files
+
+_______________________________________________________________________________
+
+## [0.1.0] - 2023-05-30
 
 This is the initial version of the project.
 
