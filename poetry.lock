@@ -126,14 +126,14 @@ files = [
 
 [[package]]
 name = "escapyde"
-version = "0.1.2"
+version = "0.2.1"
 description = "Yet another ANSI escape sequence library for Python - now modernised!"
 category = "main"
 optional = false
-python-versions = ">=3.6,<4.0"
+python-versions = ">=3.7.2,<4.0"
 files = [
-    {file = "escapyde-0.1.2-py3-none-any.whl", hash = "sha256:4a348484e5944e74ed8fb49b31e2e27cc2ef173a32cbbe0e3080585d5694544d"},
-    {file = "escapyde-0.1.2.tar.gz", hash = "sha256:f8e784edd620b243a8f33878bccfc0f3bd0674d635bcc486ace861526e76e0ac"},
+    {file = "escapyde-0.2.1-py3-none-any.whl", hash = "sha256:bb03632fa5302f03398007198e393597be34f665ce744383b3d4a9d93376a7c2"},
+    {file = "escapyde-0.2.1.tar.gz", hash = "sha256:739718d28ea2de040a0c56f707255ff3e902d26fa13f0843af9fb97e4e0b5f9a"},
 ]
 
 [[package]]
@@ -431,14 +431,14 @@ testing = ["black", "devpi-process", "flake8 (>=6,<7)", "mypy", "pytest (>=7,<8)
 
 [[package]]
 name = "typing-extensions"
-version = "4.6.2"
+version = "4.6.3"
 description = "Backported and Experimental Type Hints for Python 3.7+"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "typing_extensions-4.6.2-py3-none-any.whl", hash = "sha256:3a8b36f13dd5fdc5d1b16fe317f5668545de77fa0b8e02006381fd49d731ab98"},
-    {file = "typing_extensions-4.6.2.tar.gz", hash = "sha256:06006244c70ac8ee83fa8282cb188f697b8db25bc8b4df07be1873c43897060c"},
+    {file = "typing_extensions-4.6.3-py3-none-any.whl", hash = "sha256:88a4153d8505aabbb4e13aacb7c486c2b4a33ca3b3f807914a9b4c844c471c26"},
+    {file = "typing_extensions-4.6.3.tar.gz", hash = "sha256:d91d5919357fe7f681a9f2b5b4cb2a5f1ef0a1e9f59c4d8ff0d3491e05c0ffd5"},
 ]
 
 [[package]]
@@ -465,4 +465,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.3)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = '^3.8.1'
-content-hash = "9f2f48ecc154149227705b667a2f954db2edce0890d55411bcad494f1682a164"
+content-hash = "51cc9836ba7a8176c9c167d67575741ace55244506ead0b63b40bcb356fd40d1"
