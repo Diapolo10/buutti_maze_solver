@@ -36,20 +36,17 @@ classifiers = [
     'Development Status :: 3 - Alpha',
     'License :: OSI Approved :: MIT License',
     'Operating System :: OS Independent',
-    'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
     'Programming Language :: Python :: Implementation :: CPython',
-    'Programming Language :: Python :: Implementation :: PyPy',
     'Typing :: Typed',
 ]
 
 
 [tool.poetry.dependencies]
-python = '^3.8.1'
-escapyde = '^0.2.0'
+python = '^3.10.0'
+escapyde = '^0.2.2'
 
 
 [tool.poetry.group.dev.dependencies]
@@ -168,16 +165,13 @@ ban-relative-imports = "all"
 [tool.tox]
 legacy_tox_ini = """
 [tox]
-envlist = py38, py39, py310, py311, pypy3
+envlist = py310, py311
 isolated_build = True
 
 [gh-actions]
 python =
-    3.8: py38
-    3.9: py39
     3.10: py310
     3.11: py311
-    pypy-3.9: pypy3
 
 [gh-actions:env]
 PLATFORM =
