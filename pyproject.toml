@@ -46,7 +46,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = '^3.10.0'
-escapyde = '^0.2.2'
+escapyde = '^0.2.3'
 
 
 [tool.poetry.group.dev.dependencies]
