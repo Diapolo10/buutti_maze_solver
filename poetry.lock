@@ -126,14 +126,14 @@ files = [
 
 [[package]]
 name = "escapyde"
-version = "0.2.3"
+version = "1.0.1"
 description = "Yet another ANSI escape sequence library for Python - now modernised!"
 category = "main"
 optional = false
 python-versions = ">=3.9.0,<4.0.0"
 files = [
-    {file = "escapyde-0.2.3-py3-none-any.whl", hash = "sha256:f52e80b1b178d9670a7d9f626423c0b906dc94c51b429a6dbaccfccef893a307"},
-    {file = "escapyde-0.2.3.tar.gz", hash = "sha256:ea8a8af9352c76f4bb64081fd15935eb1a00a5897efb83baca08b45d0c94125c"},
+    {file = "escapyde-1.0.1-py3-none-any.whl", hash = "sha256:bb12c4f48f88b74376bcd5523f4a91890fac4a0988f38b5dcb00cfba467edeaa"},
+    {file = "escapyde-1.0.1.tar.gz", hash = "sha256:9f8fd786412d4fed89d56e5ded210c458cd5ed83720996f6ac91eba7c0f32723"},
 ]
 
 [[package]]
@@ -465,4 +465,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.3)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10.0"
-content-hash = "dd5a77998782ff8971a638df88a97741302c421d55ca72ebfea878bfb7502ad4"
+content-hash = "8d927e73da11fd5091d4930eb6719863fbab98fb59d4d296ed4a6a28752352ec"
