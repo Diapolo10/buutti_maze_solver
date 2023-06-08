@@ -39,4 +39,4 @@ def test_render_heatmap_valid(parsed_maze):
     result = render_heatmap(parsed_maze, filtered, 2)
 
     assert isinstance(result, str), result
-    assert result.startswith('  \x1b[0;36m#'), result
+    assert result.startswith('  \x1b[36;49m#'), result
