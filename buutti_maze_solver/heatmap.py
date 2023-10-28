@@ -1,3 +1,5 @@
+"""Heatmap generation."""
+
 from typing import TypeVar
 
 from escapyde.colours import FCYAN, FGREEN, FRED, FYELLOW  # type: ignore[import]
@@ -9,22 +11,19 @@ T = TypeVar('T')
 
 def tuple_sum(*tuples: tuple[T, ...]) -> tuple[T, ...]:
     """
-    Creates a new tuple with the values of the given tuples summed up elementwise
+    Create a new tuple with the values of the given tuples summed up elementwise.
 
     Raises a ValueError if the tuples aren't the same length.
     """
-
     return tuple(sum(values) for values in zip(*tuples, strict=True))
 
 
 def generate_heatmap(maze: list[str], depth: int) -> dict[tuple[int, ...], int]:
     """
-    Analyses a maze, producing a heatmap of every non-blocking cell
-    of what cells are close enough to reach an exit
+    Analyse a maze, producing a heatmap of every non-blocking cell of what cells are close enough to reach an exit.
 
     The output is a dictionary mapping of coordinates and their heat values.
     """
-
     movable_spots: dict[tuple[int, ...], int] = {
         (y, x): 0
         for y, row in enumerate(maze)
@@ -55,12 +54,11 @@ def generate_heatmap(maze: list[str], depth: int) -> dict[tuple[int, ...], int]:
 
 def render_heatmap(maze: list[str], heatmap: dict[tuple[int, ...], int], indent: int = 0) -> str:
     """
-    Renders a human-readable version of the maze, with the heatmap on top
+    Render a human-readable version of the maze, with the heatmap on top.
 
     NOTE: The colour formatting requires a terminal that supports
           ANSI escape sequences (eg. PowerShell).
     """
-
     result = []
     for y, row in enumerate(maze):
         text_row = []
@@ -80,13 +78,13 @@ def render_heatmap(maze: list[str], heatmap: dict[tuple[int, ...], int], indent:
 
 def filter_heatmap(heatmap: dict[tuple[int, ...], int], starting_point: tuple[int, ...]) -> dict[tuple[int, ...], int]:
     """
-    Filters unnecessary records from the heatmap, leaving only the shortest route
+    Filter unnecessary records from the heatmap, leaving only the shortest route.
 
     Raises ValueError if no path can be found in the heatmap that can reach the starting point.
     """
-
     if starting_point not in heatmap or heatmap[starting_point] == 0:
-        raise ValueError("No path between points")
+        msg = 'No path between points'
+        raise ValueError(msg)
 
     filtered_heatmap: dict[tuple[int, ...], int] = {starting_point: heatmap[starting_point]}
 

@@ -1,4 +1,4 @@
-"""Configuration options for the maze solver"""
+"""Configuration options for the maze solver."""
 
 import importlib.resources as pkg_resources
 from enum import Enum
@@ -13,6 +13,8 @@ MOVES_TO_TEST: tuple[int, ...] = (20, 150, 200)
 
 
 class MazeElement(str, Enum):
+    """Maze elements."""
+
     BLOCK = '#'
     START = '^'
     EXIT = 'E'

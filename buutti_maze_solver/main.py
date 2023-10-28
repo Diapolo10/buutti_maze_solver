@@ -1,4 +1,4 @@
-"""Lorem Ipsum"""
+"""Lorem Ipsum."""
 
 from buutti_maze_solver.config import CHARACTER_NAME, MAZES, MOVES_TO_TEST
 from buutti_maze_solver.heatmap import filter_heatmap, generate_heatmap, render_heatmap
@@ -6,9 +6,7 @@ from buutti_maze_solver.parser import find_starting_point, parse_maze
 
 
 def main() -> None:
-    """Main program"""
-
-
+    """Solver."""
     maze_data = [
         parse_maze(maze)
         for maze in MAZES.iterdir()

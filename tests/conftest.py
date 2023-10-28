@@ -1,4 +1,4 @@
-"""Contains global fixtures for unit tests"""
+"""Global fixtures for unit tests."""
 
 from pathlib import Path
 
@@ -9,13 +9,13 @@ TEST_MAZES = Path(__file__).parent / 'mazes'
 
 @pytest.fixture()
 def mazes():
-    """Fetches mazes from the test maze directory"""
-
+    """Fetch mazes from the test maze directory."""
     return list(TEST_MAZES.glob('*.txt'))
 
 
 @pytest.fixture()
 def parsed_maze():
+    """Maze."""
     return [
         "##E############################",
         "#     #                    #  #",
@@ -43,20 +43,19 @@ def parsed_maze():
 
 @pytest.fixture()
 def maze_no_start():
-    """Fetches an invalid maze, missing a starting point"""
-
+    """Fetch an invalid maze, missing a starting point."""
     return TEST_MAZES / 'maze.nostart'
 
 
 @pytest.fixture()
 def maze_no_exit():
-    """Fetches an invalid maze, missing a starting point"""
-
+    """Fetch an invalid maze, missing a starting point."""
     return TEST_MAZES / 'maze.noexit'
 
 
 @pytest.fixture()
 def parsed_maze_no_start():
+    """Maze, no start."""
     return [
         "##E############################",
         "#     #                    #  #",
